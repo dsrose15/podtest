@@ -10,7 +10,7 @@ import Foundation
 
 class Hello {
     
-    class func Say() {
+    public class func Say() {
         print("Hello")
     }
 }
