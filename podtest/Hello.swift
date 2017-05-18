@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Hello {
+public class Hello {
     
     public class func Say() {
         print("Hello")
