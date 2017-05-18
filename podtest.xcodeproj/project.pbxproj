@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E794761C1ECC894B0014D025 /* podtest.h in Headers */ = {isa = PBXBuildFile; fileRef = E794761A1ECC894B0014D025 /* podtest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79476231ECDEBEF0014D025 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79476221ECDEBEF0014D025 /* Hello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E79476171ECC894B0014D025 /* podtest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = podtest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E794761A1ECC894B0014D025 /* podtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = podtest.h; sourceTree = "<group>"; };
 		E794761B1ECC894B0014D025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79476221ECDEBEF0014D025 /* Hello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				E794761A1ECC894B0014D025 /* podtest.h */,
 				E794761B1ECC894B0014D025 /* Info.plist */,
+				E79476221ECDEBEF0014D025 /* Hello.swift */,
 			);
 			path = podtest;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					E79476161ECC894B0014D025 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = V5W4825J5B;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79476231ECDEBEF0014D025 /* Hello.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +247,7 @@
 		E79476201ECC894B0014D025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V5W4825J5B;
@@ -254,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.woolbright.podtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +268,7 @@
 		E79476211ECC894B0014D025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V5W4825J5B;
